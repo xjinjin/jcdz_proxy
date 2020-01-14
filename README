@@ -110,8 +110,10 @@ centos7 python3.7 虚拟环境:
 		mkvirtualenv --no-site-packages --python=/usr/bin/python3.7 env-jcdz
 
 	docker:
-		docker run --name jcdz_proxy_v1  -p 8082:8080  -d daocloud.io/xjinjin/jcdz_proxy:master-88253ae
-		docker run --name jcdz_parse_v1 -d daocloud.io/xjinjin/jcdz_proxy:master-88253ae
+		docker pull daocloud.io/xjinjin/jcdz_proxy:master-eca0287
+		docker run --name jcdz_proxy_v1  -p 8082:8080 -d daocloud.io/xjinjin/jcdz_proxy:master-eca0287
+		docker pull daocloud.io/xjinjin/jcdz_parse:master-40c9a56
+		docker run --name jcdz_parse_v1 -d daocloud.io/xjinjin/jcdz_parse:master-40c9a56
 
 	项目依赖：
 		pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mitmproxy
