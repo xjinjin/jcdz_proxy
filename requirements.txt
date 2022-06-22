@@ -23,7 +23,7 @@ ldap3==2.6.1
 MarkupSafe==1.1.1
 mitmproxy==5.0.0
 more-itertools==8.0.2
-numpy==1.18.0
+numpy==1.22.0
 pandas==0.25.3
 passlib==1.7.2
 protobuf==3.10.0
